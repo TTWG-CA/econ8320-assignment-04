@@ -16,7 +16,7 @@ class Matrix(object):
     """ 
     Read the matrix and store as part of the class object
     """
-    def __init__(self, value = {}, dim=(1,1)):
+    def __init__(self, value = [], dim=(1,1)):
         if isinstance(value, list):
             if len(value)>0:
                 if type(value[0]) is int or type(value[0]) is float:
@@ -81,5 +81,7 @@ class Matrix(object):
             string += "]\n\n"
         return string
 
-x = Matrix([1,4,5], dim=(1,3))
-print(x)
+x = Matrix(dim=(10,10))
+x
+x.value
+
